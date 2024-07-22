@@ -54,7 +54,7 @@ table {
 body {
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #2D320E;
-    background-image: url("./img/background.png");
+    background-image: url("../img/background.png");
     background-repeat: repeat;
     color: #2D320E;
 }
