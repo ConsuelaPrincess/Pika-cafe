@@ -47,12 +47,18 @@ nav {
     position: relative;
 }
 
-.chiffon-cake-container img, .cream-container img, .filling-container img {
+.chiffon-cake-container, .cream-container, .filling-container {
     width: 100%;
+    height:100%;
     position: absolute;
     top: 0;
     left: 0;
     display: none;
+}
+
+.chiffon-cake-container img, .cream-container img, .filling-container img {
+    width: 100%;
+
 }
 
 
