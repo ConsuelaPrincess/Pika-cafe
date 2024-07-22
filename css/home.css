@@ -1,0 +1,339 @@
+/*head*/
+nav {
+    background-color: #2D320E;
+    margin: 0 80px;
+    padding: 10px;
+    border-radius: 80px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    width: calc(100% - 160px);
+    top:0;
+    left: 50%;
+    transform: translate(calc(-50% - 80px), 32px);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #C48729 solid 1px;
+    border-radius: 80px;
+    padding: 24px 48px;
+}
+
+.logo {
+    max-width: 128px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 1.2rem;
+}
+
+.navbar a {
+    color:#C48729;
+}
+
+.head-img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+/*about us*/
+.aboutUs {
+    background-color: #F8E9C1;
+    display: flex;
+    align-items: center;
+    gap:5rem;
+}
+
+/*menu*/
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu img {
+    max-width:232px;
+    margin-bottom: 1rem;
+}
+
+.menu span{
+    margin: 0 auto;
+}
+
+
+/*booking*/
+.booking {
+    background-color: #F8E9C1;
+    border-radius: 40px;
+    padding: 3rem 2.25rem;
+    display: flex;
+    gap:3.5rem;
+}
+
+.notice{
+    width: 60%;
+}
+
+.notice ul li {
+    margin-left: 2rem;
+    list-style:circle;
+    line-height: 1.5;
+}
+
+.booking-form {
+    width: 40%;
+}
+
+.booking-form > div {
+    margin-bottom: 1rem;
+    align-content: end;
+    width: 100%;
+}
+
+/* form */
+label{
+    display: inline-block;
+    width: 10%;
+    margin-right: 0.5rem;
+}
+
+.agreed{
+    display: inline;
+    width: 100%;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding-right: 40px; /* 留出偽元素的位置 */
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.select-container::after {
+    content: url('./img/chevron-down.png');
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* 使偽元素不影響用戶操作 */
+}
+
+
+select, input[type="text"],input[type="tel"],input[type="email"],input[type="date"]{
+    display: inline-block;
+    width: calc(100% - 12%);
+    height: 2.5rem;
+    border-radius: 100px;
+    border: #2D320E 1px solid;
+    color: #2D320E;
+    background-color: #F8E9C1;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    
+}
+
+.date-container {
+    position: relative;
+}
+
+input[type="date"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    padding-right: 40px; 
+}
+
+.date-container::after {
+    content: url('./img/calendar.png');
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* 隱藏date的原始icon */
+.date-container input[type="date"]::-webkit-calendar-picker-indicator
+ {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+.date-container input[type="date"]::-ms-clear,
+.date-container input[type="date"]::-ms-expand {
+    display: none;
+}
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-container > label{
+    cursor: pointer;
+    user-select: none;
+}
+
+/* 隱藏原始的 checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #2D320E;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+/* 勾選狀態的樣式 */
+input[type="checkbox"]:checked {
+    background-color: #C48729;
+    border: 2px solid #C48729;
+}
+
+/* 勾選狀態的偽元素 */
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-btn{
+    margin-top: 2rem;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+
+/*customized*/
+.cake{
+    color: #C48729;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding:0 10rem;
+}
+
+.cake-img{
+    max-width: 450px;
+}
+
+.cake-content {
+    text-align: center;
+}
+
+.cake-content > div{
+    margin-top: 2rem;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+/*info*/
+.bg-yellow{
+    background-color: #F8E9C1;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+}
+
+.info li {
+    margin-bottom: 1rem;
+}
+
+.info li img{
+    vertical-align: middle;
+}
+
+.info p {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.map{
+    width: 50%;
+}
+
+.info iframe{
+    border-radius:40px;
+}
+
+/* moon */
+.moon1{
+    position: absolute;
+    top: 80px;
+    left: -70px;
+}
+.moon2{
+    position: absolute;
+    top: 600px;
+    right: 100px;
+}
+
+.moon3{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    width: 200px;
+    z-index: -1;
+}
+
+.moon4{
+    position: absolute;
+    top: 500px;
+    right: -80px;
+    z-index: -1;
+}
+.moon5{
+    position: absolute;
+    top:1200px;
+    left: 50px;
+    z-index: -1;
+}
+
+.moon6{
+    position: absolute;
+    top: 1900px;
+    left: -50px;
+    z-index: -1;
+}
+.moon7{
+    position: absolute;
+    top: 1600px;
+    right: 80px;
+    z-index: -1;
+}

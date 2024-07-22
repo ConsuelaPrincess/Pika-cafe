@@ -1,0 +1,118 @@
+/*navbar*/
+nav {
+    background-color: #2D320E;
+    margin: 2rem 80px;
+    padding: 10px;
+    border-radius: 80px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #C48729 solid 1px;
+    border-radius: 80px;
+    padding: 24px 48px;
+}
+
+.logo {
+    max-width: 128px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 1.2rem;
+}
+
+.navbar a {
+    color:#C48729;
+}
+
+/* cake */
+.customized {
+    display: flex;
+    gap:5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-container {
+    width: 40%;
+    height: 500px;
+    position: relative;
+}
+
+.chiffon-cake-container img, .cream-container img, .filling-container img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+fieldset{
+    margin-bottom: 2rem;
+}
+
+legend{
+    font-size: 1.1rem;
+    color: #2D320E;
+    font-weight: bolder;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+fieldset input[type="radio"] {
+    display: none;
+}
+
+fieldset label{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border:solid 1px #2D320E;
+    border-radius: 100px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.selected-label{
+    background-color: #C48729;
+    border:solid 1px #C48729;
+    color:#F8E9C1;
+}
+
+.flavor {
+    background-color: #F8E9C1;
+    border-radius: 40px;
+    padding: 3rem 2.25rem;
+    width: 25%;
+}
+
+textarea {
+    width: 100%;
+    height: 4rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    background-color: #F8E9C1;
+    border: #2D320E solid #2D320E;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+/* orderNotice */
+.orderNotice {
+    background-color: #F8E9C1;
+    border-radius: 40px;
+    padding: 3rem 2.25rem;
+}
+.orderNotice li {
+    margin-left: 2rem;
+    list-style:circle;
+    line-height: 1.5;
+}
