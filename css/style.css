@@ -54,7 +54,7 @@ table {
 body {
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #2D320E;
-    background-image: url("../img/background.png");
+    background-image: url("./img/background.png");
     background-repeat: repeat;
     color: #2D320E;
 }
@@ -84,7 +84,9 @@ a{
 }
 
 .container {
-    padding:  5rem 10rem;
+    max-width: 1680px;
+    padding: 5rem 10rem;
+    margin: 0 auto;
 }
 
 .btn-yellow{
@@ -111,6 +113,10 @@ a{
     border-radius: 100px;
     text-align: center;
     border: none;
+}
+
+.bg-yellow{
+    background-color: #F8E9C1;
 }
 
 /*scrollbar*/

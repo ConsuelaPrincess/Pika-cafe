@@ -1,11 +1,19 @@
-/*navbar*/
+/*head*/
+.hamburger {
+    display: none;
+}
+
 nav {
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.navbar-outline {
     background-color: #2D320E;
-    margin: 2rem 80px;
     padding: 10px;
     border-radius: 80px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    margin: 2rem 5rem ;
 }
 
 .navbar{
@@ -15,6 +23,8 @@ nav {
     border: #C48729 solid 1px;
     border-radius: 80px;
     padding: 24px 48px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .logo {
@@ -34,24 +44,34 @@ nav {
 }
 
 /* cake */
+.sptitle {
+    text-align: start;
+    font-size:1rem;
+    z-index: -1;
+
+}
+
 .customized {
     display: flex;
+    gap:5rem;
     justify-content: center;
     align-items: center;
 }
 
 .cake-container {
-    width: 40%;
+    width: 50%;
     height: 500px;
     position: relative;
 }
 
 .chiffon-cake-container img, .cream-container img, .filling-container img {
-    height: 100%;
+    max-width: 600px;
     position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     display: none;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -90,7 +110,11 @@ fieldset label{
     background-color: #F8E9C1;
     border-radius: 40px;
     padding: 3rem 2.25rem;
-    width: 25%;
+    box-sizing: border-box;
+}
+
+.flavor-form {
+    margin-top: 2rem;
 }
 
 textarea {
@@ -104,6 +128,11 @@ textarea {
     padding: 0.5rem;
 }
 
+.form-btn {
+    display: flex; 
+    justify-content: flex-end;
+}
+
 /* orderNotice */
 .orderNotice {
     background-color: #F8E9C1;
@@ -114,4 +143,127 @@ textarea {
     margin-left: 2rem;
     list-style:circle;
     line-height: 1.5;
+}
+
+
+/* rwd */
+@media (max-width: 1440px)  {
+    .container {
+        max-width: 1000px;
+        padding: 5rem;
+    }
+
+    .logo{
+        max-width: 100px;
+    }
+
+    .customized {
+        gap: 2rem;
+    }
+
+    .chiffon-cake-container img, .cream-container img, .filling-container img {
+        max-width: 100%;
+    }
+
+    fieldset label {
+        margin-right: 0.5rem;
+        padding: 0.5rem 0.8rem;
+    }
+ 
+}
+
+@media (max-width: 1024px)  {
+    .container {
+        max-width: 992px;
+        padding: 4rem;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar-outline{
+        margin: 2rem 3rem ;
+    }
+
+    .logo {
+        max-width: 80px; 
+    }
+
+    .customized {
+        flex-direction: column;
+    }
+
+    .cake-container {
+        width: 70%;
+        height: 600px;
+    }
+
+    .flavor {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px)  {
+    .container {
+        max-width: 768px;
+        padding: 4rem 3rem;
+    }
+
+    .cake-container {
+    height: 400px;
+    }
+
+   
+}
+
+
+
+@media (max-width: 430px)  {
+    .container {
+        max-width: 375px;
+        padding: 3rem 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+    .logo {
+        max-width: 60px;
+    }
+
+    .navbar-outline {
+        margin: 1rem;
+    }
+
+    .navbar {
+        padding: 16px 24px;
+    }
+    
+    .flavor-form div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flavor-form label {
+        width: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-green {
+        width: 100%;
+    }
 }

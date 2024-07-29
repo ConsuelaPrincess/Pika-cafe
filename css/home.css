@@ -1,16 +1,21 @@
 /*head*/
+.hamburger {
+    display: none;
+}
+
 nav {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 1680px;
+}
+
+.navbar-outline {
     background-color: #2D320E;
-    margin: 0 80px;
     padding: 10px;
     border-radius: 80px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: absolute;
-    width: calc(100% - 160px);
-    top:0;
-    left: 50%;
-    transform: translate(calc(-50% - 80px), 32px);
+    margin: 2rem 5rem ;
 }
 
 .navbar{
@@ -20,6 +25,8 @@ nav {
     border: #C48729 solid 1px;
     border-radius: 80px;
     padding: 24px 48px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .logo {
@@ -45,19 +52,22 @@ nav {
     z-index: -1;
 }
 
-
 /*about us*/
 .aboutUs {
-    background-color: #F8E9C1;
     display: flex;
     align-items: center;
     gap:5rem;
+    width: 100%;
+}
+.aboutUsImg img {
+    max-width: 400px;
 }
 
 /*menu*/
 .menu{
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .menu img {
@@ -77,10 +87,11 @@ nav {
     padding: 3rem 2.25rem;
     display: flex;
     gap:3.5rem;
+    justify-content: center;
 }
 
 .notice{
-    width: 60%;
+    max-width: 45%;
 }
 
 .notice ul li {
@@ -90,7 +101,7 @@ nav {
 }
 
 .booking-form {
-    width: 40%;
+    width: 50%;
 }
 
 .booking-form > div {
@@ -102,8 +113,7 @@ nav {
 /* form */
 label{
     display: inline-block;
-    width: 10%;
-    margin-right: 0.5rem;
+    width: 15%;
 }
 
 .agreed{
@@ -126,9 +136,9 @@ select{
 }
 
 .select-container::after {
-    content: url('../img/chevron-down.png');
+    content: url('./img/chevron-down.png');
     position: absolute;
-    right: 1rem;
+    right: 8%;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none; /* 使偽元素不影響用戶操作 */
@@ -137,7 +147,7 @@ select{
 
 select, input[type="text"],input[type="tel"],input[type="email"],input[type="date"]{
     display: inline-block;
-    width: calc(100% - 12%);
+    width: 80%;
     height: 2.5rem;
     border-radius: 100px;
     border: #2D320E 1px solid;
@@ -161,9 +171,9 @@ input[type="date"]{
 }
 
 .date-container::after {
-    content: url('../img/calendar.png');
+    content: url('./img/calendar.png');
     position: absolute;
-    right: 1rem;
+    right: 8%;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
@@ -236,14 +246,13 @@ input[type="checkbox"]:checked::after {
     justify-content: flex-end;
 }
 
-
 /*customized*/
 .cake{
     color: #C48729;
     display: flex;
     align-items: center;
     gap: 5rem;
-    padding:0 10rem;
+    width: 100%;
 }
 
 .cake-img{
@@ -261,14 +270,13 @@ input[type="checkbox"]:checked::after {
 }
 
 /*info*/
-.bg-yellow{
-    background-color: #F8E9C1;
-}
+
 .info{
     display: flex;
     align-items: center;
     justify-content: center;
     gap:5rem;
+    width: 100%;
 }
 
 .info li {
@@ -296,19 +304,21 @@ input[type="checkbox"]:checked::after {
 .moon1{
     position: absolute;
     top: 80px;
-    left: -70px;
+    left: -100px;
+    width: 300px;
 }
 .moon2{
     position: absolute;
-    top: 600px;
+    top: 400px;
     right: 100px;
+    width: 120px;
 }
 
 .moon3{
     position: absolute;
     top: 80px;
-    left: 100px;
-    width: 200px;
+    left: 150px;
+    width: 250px;
     z-index: -1;
 }
 
@@ -317,23 +327,297 @@ input[type="checkbox"]:checked::after {
     top: 500px;
     right: -80px;
     z-index: -1;
+    width: 500px;
 }
 .moon5{
     position: absolute;
     top:1200px;
     left: 50px;
     z-index: -1;
+    width: 150px;
 }
 
 .moon6{
     position: absolute;
-    top: 1900px;
-    left: -50px;
+    top: 2100px;
+    left: -80px;
     z-index: -1;
+    width: 400px;
 }
 .moon7{
     position: absolute;
     top: 1600px;
     right: 80px;
     z-index: -1;
+    width: 250px;
+}
+
+/* rwd */
+@media (max-width: 1440px)  {
+    .container {
+        max-width: 1000px;
+        padding: 5rem;
+    }
+
+    .logo{
+        max-width: 100px;
+    }
+
+    .aboutUs {
+        gap:3rem;
+    }
+
+    .aboutUs img{
+        max-width: 350px;
+    }
+
+    label{
+        width: 15%;
+    }
+
+    .cake-img {
+        max-width: 350px;
+    }
+    
+    .info{
+        gap:2rem;
+    }
+
+    .info li img {
+        max-width: 24px;
+    }
+
+    .moon2 {
+        top: 500px;
+        right: 160px;
+    }
+}
+
+@media (max-width: 1024px)  {
+    .container {
+        max-width: 992px;
+        padding: 4rem;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navbar-outline{
+        margin: 2rem 3rem ;
+    }
+    .logo {
+        max-width: 80px; 
+    }
+
+    .moon1{
+        top: 0px;
+        left: -150px;
+    }
+
+    .moon2 {
+        top: 600px;
+        right: 10px;
+    }
+    .moon3{
+        top: 50px;
+        left: 30px;
+        width: 200px;
+    }
+    
+    .moon4{
+        top: 500px;
+        width: 350px;
+    }
+
+    .moon5{
+        top:1100px;
+        left: 20px;
+        z-index: 1;
+        width: 100px;
+    }
+
+    .moon6{
+        top: 2100px;
+        left: -150px;
+        width: 400px;
+    }
+
+    .moon7{
+        top: 1500px;
+        right: -50px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px)  {
+    .container {
+        max-width: 768px;
+        padding: 4rem 3rem;
+    }
+
+    .aboutUs {
+        flex-direction: column;
+    }
+    
+    .menu img {
+        max-width: 120px;
+    }
+
+    .booking{
+        flex-direction: column;
+    }
+    .notice {
+        max-width: 100%;
+    }
+    .booking-form {
+        width: 100%;
+    }
+
+    .cake {
+        flex-direction: column;
+    }
+
+    .cake-content > div {
+        justify-content: center;
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .map {
+        width: 80%;
+    }
+
+    .moon2 {
+        top:1150px;
+        right: 100px;
+    }
+
+    .moon5 {
+        top: 800px;
+        left: -15px;
+    }
+
+    .moon6 {
+        top:2500px;
+
+    }
+
+    .moon7 {
+        top: 1500px;
+        right: -90px;
+    }
+}
+
+
+
+@media (max-width: 430px)  {
+    .container {
+        max-width: 375px;
+        padding: 3rem 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+    .logo {
+        max-width: 60px;
+    }
+
+    .navbar-outline {
+        margin: 1rem;
+    }
+
+    .navbar {
+        padding: 16px 24px;
+    }
+    
+    .head-img {
+        height: 70vh;
+    }
+
+    .aboutUs img {
+        max-width: 300px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu a {
+        margin: 0 auto;
+    }
+
+    label {
+        width: 20%;
+    }
+
+    select, input[type="text"], input[type="tel"], input[type="email"], input[type="date"] {
+        width: 75%;
+    }
+
+    .cake-img {
+        max-width:300px;
+        margin-top: 2rem;
+    }
+
+    .cake {
+        gap:2rem;
+    }
+
+    .info li img {
+        max-width: 20px;
+    }
+
+    .info p {
+        margin-left: 4px;
+    }
+
+    .moon1 {
+        width: 100px;
+        left: -50px;
+    }
+
+    .moon2 {
+        width: 200px;
+        right: -80px;
+    }
+
+    .moon3 {
+        width: 150px;
+        left: -10px;
+        top: 600px;
+    }
+
+    .moon4 {
+        top: 1100px;
+        right: -150px;
+        width: 300px;
+    }
+
+    .moon5 {
+        top: 1500px;
+    }
+
+    .moon6 {
+        top: 3200px;
+        width: 350px;
+    }
+
+    .moon7 {
+        top: 2400px;
+        right: -90px;
+    }
 }
