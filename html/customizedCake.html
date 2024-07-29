@@ -4,29 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/customizedCake.css">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../customizedCake.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet"/>
 </head>
 <body>
     <div id="scroll-zone">
         <header>
             <nav>
-                <div class="navbar">
-                    <a href=""><img class="logo" src="../img/logo.png" alt=""></a>
-                    <ul>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">MENU</a></li>
-                        <li><a href="">BOOING</a></li>
-                        <li><a href="">CUSTOMIZED CAKE</a></li>
-                        <li><a href="">INFO</a></li>
-                    </ul>
+                <div class="navbar-outline">
+                    <div class="navbar">
+                        <a href=""><img class="logo" src="../img/logo.png" alt=""></a>
+                        <ul>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="">MENU</a></li>
+                            <li><a href="">BOOING</a></li>
+                            <li><a href="">CUSTOMIZED CAKE</a></li>
+                            <li><a href="">INFO</a></li>
+                        </ul>
+                        <a href="#" class="hamburger">menu</a>
+                    </div>
                 </div>
             </nav>
         </header>
         <main>
             <section>
-                <div class="customized container">
+                <div class="container">
+                <h1 class="sptitle">CUSTOMIZED YOUR SPECIAL CAKE</h1>
+                <div class="customized">
                     <div class="cake-container">
                         <div class="chiffon-cake-container">
                             <img src="../img/cake-chiffon-v-06.png" id="img-chiffon-cake-v" alt="" style="display: block;">
@@ -45,9 +51,10 @@
                         </div>
                     </div>
                     <div class="flavor">
+                        <h4>Step1: Choose flavor</h4>
                         <form action="" method="get" class="flavor-form">
                               <fieldset class="chiffon-cake-container">
-                                <legend>Choose the flavor of chiffon cake</legend>
+                                <legend>Chiffon cake</legend>
                                 <div>
                                   <input type="radio" id="chiffon-cake-v" name="chiffon-cake" value="chiffon-cake-v" onclick="showImage1(this.value)" checked/>
                                   <label for="chiffon-cake-v" class="selected-label">Vanilla</label>
@@ -61,7 +68,7 @@
                               </fieldset>
                               
                               <fieldset class="cream-container">
-                                <legend>Choose the flavor of cream</legend>
+                                <legend>Cream</legend>
                                 <div>
                                   <input type="radio" id="cream-v" name="cream" value="cream-v" onclick="showImage2(this.value)" checked/>
                                   <label for="cream-v" class="selected-label">Vanilla</label>
@@ -75,7 +82,7 @@
                               </fieldset>
 
                               <fieldset class="filling-container">
-                                <legend>Choose the flavor of filling & fruit</legend>
+                                <legend>Filling & Fruit</legend>
                                 <div>
                                   <input type="radio" id="filling-c" name="filling" value="filling-c" onclick="showImage3(this.value)" checked/>
                                   <label for="contactChoice1" class="selected-label">Cherry</label>
@@ -100,6 +107,7 @@
                         </form>
                     </div>
                 </div>
+            </div>
             </section>
             <section>
                 <div class=" container">
@@ -133,7 +141,7 @@
 
     <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
 <script nomodule src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
-    <script src="../scripts/locomotive-scroll.min.js"></script>
+    <script src="../dist/locomotive-scroll.min.js"></script>
         <script>
             const scroll = new LocomotiveScroll({
           el: document.querySelector("#scroll-zone"),

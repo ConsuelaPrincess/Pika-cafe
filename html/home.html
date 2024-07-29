@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../home.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet"/>
 </head>
 <body>
     <div id="scroll-zone">
         <header>
             <nav>
-                <div class="navbar">
-                    <a href=""><img class="logo" src="../img/logo.png" alt=""></a>
-                    <ul>
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">MENU</a></li>
-                        <li><a href="">BOOING</a></li>
-                        <li><a href="">CUSTOMIZED CAKE</a></li>
-                        <li><a href="">INFO</a></li>
-                    </ul>
+                <div class="navbar-outline">
+                    <div class="navbar">
+                        <a href=""><img class="logo" src="../img/logo.png" alt=""></a>
+                        <ul>
+                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="">MENU</a></li>
+                            <li><a href="">BOOING</a></li>
+                            <li><a href="">CUSTOMIZED CAKE</a></li>
+                            <li><a href="">INFO</a></li>
+                        </ul>
+                        <a href="#" class="hamburger">menu</a>
+                    </div>
                 </div>
             </nav>
             <div>
@@ -28,27 +32,28 @@
             </div>
         </header>
         <main>
-            <section style="position: relative;">
-                <div class="aboutUs container">
-                    <div>
-                        <h1>About Us</h1>
-                        <p>As night descends and the city's hustle gradually fades, a hidden gem awaits at the corner: a retro Showa-era cafe and bar that only opens its doors after dusk, resembling a tunnel through time. Stepping into this unique space, you're transported back to the nostalgic atmosphere of Japan's Showa period. The vintage furnishings and elegant wooden bar exude a profound retro charm, each piece of furniture and decoration a witness to bygone days, recounting the city's past glory.
-                            <br/>
-                            <br/>
-                            Here, time seems to stand still. Patrons lounge on comfortable sofas or lean against the bar, savoring bespoke cocktails or sipping on rich coffee aromas. Attendants dressed in retro attire, their smiles reflecting a deep appreciation and respect for the era, pay homage to every drink served.
-                            As music gradually fills the air, the cafe transforms into a small dance floor, lights dancing on the walls, creating a mysterious and enchanting ambiance. Here, people unwind, sharing their stories, as if collectively weaving small yet beautiful moments.
-                            <br/>
-                            <br/>
-                            PikaPika cafe and bar is not just a nightspot; it's a gateway to a time tunnel, offering an escape from the fast pace of modern life, allowing a rediscovery of refinement and leisure, and a taste of the unique charm of the night.
-                        </p>
+            <section class="bg-yellow"  style="position: relative;">
+                <div class="container">
+                    <div class="aboutUs">
+                        <div>
+                            <h1>About Us</h1>
+                            <p>As night descends and the city's hustle gradually fades, a hidden gem awaits at the corner: a retro Showa-era cafe and bar that only opens its doors after dusk, resembling a tunnel through time. Stepping into this unique space, you're transported back to the nostalgic atmosphere of Japan's Showa period. The vintage furnishings and elegant wooden bar exude a profound retro charm, each piece of furniture and decoration a witness to bygone days, recounting the city's past glory.
+                                <br/>
+                                <br/>
+                                Here, time seems to stand still. Patrons lounge on comfortable sofas or lean against the bar, savoring bespoke cocktails or sipping on rich coffee aromas. Attendants dressed in retro attire, their smiles reflecting a deep appreciation and respect for the era, pay homage to every drink served.
+                                As music gradually fills the air, the cafe transforms into a small dance floor, lights dancing on the walls, creating a mysterious and enchanting ambiance. Here, people unwind, sharing their stories, as if collectively weaving small yet beautiful moments.
+                                <br/>
+                                <br/>
+                                PikaPika cafe and bar is not just a nightspot; it's a gateway to a time tunnel, offering an escape from the fast pace of modern life, allowing a rediscovery of refinement and leisure, and a taste of the unique charm of the night.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="../img/aboutUs.png" alt="">
+                        </div>
                     </div>
-                    <div>
-                        <img src="../img/aboutUs.png" alt="">
-                    </div>
+                    <img class="moon1" src="../img/moon.png" alt="" data-scroll="" data-scroll-speed="3"> 
+                    <img class="moon2" src="../img/moon.png" alt="" data-scroll="" data-scroll-speed="3">
                 </div>
-                <!-- data-scroll data-scroll-speed="4" data-scroll-repeat data-scroll-position="top" -->
-                    <img class="moon1" src="../img/moon-200.png" alt="" data-scroll="" data-scroll-speed="3"> 
-                    <img class="moon2" src="../img/moon-100.png" alt="" data-scroll="" data-scroll-speed="3">
             </section>
             <section style="position: relative;">
                 <div class="container">
@@ -70,10 +75,10 @@
                         
                 </div>
                 <img class="moon3" src="../img/moon.png" alt="" data-scroll="" data-scroll-speed="3">
-                <img class="moon4" src="../img/moon-400.png" alt="" data-scroll="" data-scroll-speed="3">
-                <img class="moon5" src="../img/moon-100.png" alt="" data-scroll="" data-scroll-speed="3">
-                <img class="moon6" src="../img/moon-450.png" alt="" data-scroll="" data-scroll-speed="3">
-                <img class="moon7" src="../img/moon-200.png" alt="" data-scroll="" data-scroll-speed="3">
+                <img class="moon4" src="../img/moon.png" alt="" data-scroll="" data-scroll-speed="3">
+                <img class="moon5" src="../img/moon.png" alt="" data-scroll="" data-scroll-speed="3">
+                <img class="moon6" src="../img/moon.png" alt="" data-scroll="" data-scroll-speed="3">
+                <img class="moon7" src="../img/moon.png" alt="" data-scroll="" data-scroll-speed="3">
             </section>
             <section>
                 <div class="container">
@@ -155,7 +160,6 @@
                 
             </section>
             <section>
-                
                 <div class="container">
                     <h1>CUSTOMIZED CHIFFON CAKE</h1>
                     <div class="cake">
@@ -163,7 +167,7 @@
                                 <img class="cake-img" src="../img/cake.png">
                             </div>
                             <div class="cake-content">
-                                <h4>“A SPECIAL DAY FOR A SPECIAL DAY”</h4>
+                                <h4>“A SPECIAL CAKE FOR YOU”</h4>
                                 <p>At PIKAPIKA Café, we believe every celebration deserves a cake as unique as you are. Our custom cakes are crafted with love, care, and the finest ingredients to create a centerpiece that not only looks spectacular but tastes divine. Whether you’re celebrating a birthday, wedding, anniversary, or any special occasion, our talented pastry chefs work closely with you to bring your vision to life. Choose from a variety of flavors, fillings, and designs to suit your taste and theme. From elegant floral designs to fun and whimsical creations, we ensure each cake is a work of art. Experience the perfect blend of beauty and flavor with our custom cakes, tailored just for you. Place your order today and make your next celebration truly unforgettable!</p>
                                 <div>
                                     <a href="" class="btn-yellow">Booking</a>
@@ -173,8 +177,9 @@
                     </div>
                 </div>
             </section >
-            <section>
-                <div class="container bg-yellow">
+
+            <section  class="bg-yellow">
+                <div class="container">
                     <h1>INFO</h1>
                     <div class="info">
                         <div class="map">
@@ -192,6 +197,7 @@
                     </div>
                 </div>
             </section> 
+            </div>
         </main>
         <footer>
             <div>
@@ -205,7 +211,7 @@
 
     <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
 <script nomodule src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
-    <script src="../scripts/locomotive-scroll.min.js"></script>
+    <script src="../dist/locomotive-scroll.min.js"></script>
         <script>
             const scroll = new LocomotiveScroll({
           el: document.querySelector("#scroll-zone"),
