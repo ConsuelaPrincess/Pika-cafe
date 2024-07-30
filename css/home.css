@@ -136,7 +136,7 @@ select{
 }
 
 .select-container::after {
-    content: url('./img/chevron-down.png');
+    content: url('../img/chevron-down.png');
     position: absolute;
     right: 8%;
     top: 50%;
@@ -171,7 +171,7 @@ input[type="date"]{
 }
 
 .date-container::after {
-    content: url('./img/calendar.png');
+    content: url('../img/calendar.png');
     position: absolute;
     right: 8%;
     top: 50%;
