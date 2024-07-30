@@ -17,13 +17,15 @@
                     <div class="navbar">
                         <a href=""><img class="logo" src="../img/logo.png" alt=""></a>
                         <ul>
+                            <li><a href="#" class="hamburger"><img src="../img/menu.png" alt="" class="hamburger-img"></a></li>
+                        <ul class="nav-links">
                             <li><a href="">ABOUT US</a></li>
                             <li><a href="">MENU</a></li>
                             <li><a href="">BOOING</a></li>
                             <li><a href="">CUSTOMIZED CAKE</a></li>
                             <li><a href="">INFO</a></li>
                         </ul>
-                        <a href="#" class="hamburger">menu</a>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -31,7 +33,7 @@
         <main>
             <section>
                 <div class="container">
-                <h1 class="sptitle">CUSTOMIZED YOUR SPECIAL CAKE</h1>
+                <!-- <h1 class="sptitle">CUSTOMIZED YOUR SPECIAL CAKE</h1> -->
                 <div class="customized">
                     <div class="cake-container">
                         <div class="chiffon-cake-container">
@@ -140,78 +142,9 @@
     </div>
 
     <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
-<script nomodule src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
     <script src="../scripts/locomotive-scroll.min.js"></script>
-        <script>
-            const scroll = new LocomotiveScroll({
-          el: document.querySelector("#scroll-zone"),
-          smooth: true,
-          lerp: 0.05,
-          repeat: true,
-          tablet:{
-            smooth:true,
-            breakpoint:250
-          },
-          smartphone:{
-            smooth:false
-          }
-        });
+    <script src="../scripts/all.js"></script>
 
-
-        function showImage1(imageId1) {
-            const chiffonCakeImages = document.querySelectorAll('.chiffon-cake-container img');
-            chiffonCakeImages.forEach(img => {
-                img.style.display = 'none';
-            });
-            document.getElementById('img-' + imageId1).style.display = 'block';
-
-            const labels1 = document.querySelectorAll('.chiffon-cake-container label');
-            labels1.forEach(label => {
-                label.classList.remove('selected-label');
-            });
-
-            const selectedLabel1 = document.querySelector(`label[for="${imageId1}"]`);
-            if (selectedLabel1) {
-                selectedLabel1.classList.add('selected-label');
-            }
-        }
-
-        function showImage2(imageId2) {
-            const creamImages = document.querySelectorAll('.cream-container img');
-            creamImages.forEach(img => {
-                img.style.display = 'none';
-            });
-            document.getElementById('img-' + imageId2).style.display = 'block';
-
-            const labels2 = document.querySelectorAll('.cream-container label');
-            labels2.forEach(label => {
-                label.classList.remove('selected-label');
-            });
-
-            const selectedLabel2 = document.querySelector(`label[for="${imageId2}"]`);
-            if (selectedLabel2) {
-                selectedLabel2.classList.add('selected-label');
-            }
-        }
-
-        function showImage3(imageId3) {
-            const fillingImages = document.querySelectorAll('.filling-container img');
-            fillingImages.forEach(img => {
-                img.style.display = 'none';
-            });
-            document.getElementById('img-' + imageId3).style.display = 'block';
-
-            const labels3 = document.querySelectorAll('.filling-container label');
-            labels3.forEach(label => {
-                label.classList.remove('selected-label');
-            });
-
-            const selectedLabel3 = document.querySelector(`label[for="${imageId3}"]`);
-            if (selectedLabel3) {
-                selectedLabel3.classList.add('selected-label');
-            }
-        }
-
-        </script>
 </body>
 </html>
