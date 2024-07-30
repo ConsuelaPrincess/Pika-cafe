@@ -1,46 +1,8 @@
 /*head*/
-.hamburger {
-    display: none;
-}
-
 nav {
     width: 100%;
     max-width: 1680px;
     margin: 0 auto;
-}
-
-.navbar-outline {
-    background-color: #2D320E;
-    padding: 10px;
-    border-radius: 80px;
-    margin: 2rem 5rem ;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: #C48729 solid 1px;
-    border-radius: 80px;
-    padding: 24px 48px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.logo {
-    max-width: 128px;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar ul li {
-    margin-left: 1.2rem;
-}
-
-.navbar a {
-    color:#C48729;
 }
 
 /* cake */
@@ -126,6 +88,7 @@ textarea {
     border: #2D320E solid #2D320E;
     border-radius: 10px;
     padding: 0.5rem;
+    outline-color: #C48729;
 }
 
 .form-btn {
@@ -178,22 +141,6 @@ textarea {
         padding: 4rem;
     }
 
-    .navbar ul{
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .navbar-outline{
-        margin: 2rem 3rem ;
-    }
-
-    .logo {
-        max-width: 80px; 
-    }
-
     .customized {
         flex-direction: column;
     }
@@ -240,17 +187,6 @@ textarea {
 
     p {
         font-size: 0.9rem;
-    }
-    .logo {
-        max-width: 60px;
-    }
-
-    .navbar-outline {
-        margin: 1rem;
-    }
-
-    .navbar {
-        padding: 16px 24px;
     }
     
     .flavor-form div {

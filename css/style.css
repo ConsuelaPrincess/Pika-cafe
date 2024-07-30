@@ -100,19 +100,37 @@ a{
     border-radius: 100px;
     text-align: center;
     border: none;
+    cursor: pointer;
+}
+
+.btn-yellow:hover {
+    background-color: #AE741C;
+}
+
+.btn-yellow:active {
+    background-color: #AE741C;
 }
 
 .btn-green{
     display: block;
     width: fit-content;
     background-color: #2D320E;
-    color: #C48729;
+    color: #E0AE60;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 100px;
     text-align: center;
     border: none;
+    cursor: pointer;
+}
+
+.btn-green:hover {
+    background-color: #222607;
+}
+
+.btn-green:active {
+    background-color: #222607;
 }
 
 .bg-yellow{
@@ -142,6 +160,125 @@ a{
     right: 0;
     top: 0;
     width: 7px;
+}
+
+/*navbar*/
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-img {
+    width: 37px;
+}
+
+.navbar-outline {
+    background-color: #2D320E;
+    padding: 10px;
+    border-radius: 80px;
+    margin: 2rem 5rem ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #C48729 solid 1px;
+    border-radius: 80px;
+    padding: 24px 48px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    transition: height 0.3s ease;
+}
+.navbar a {
+    color:#C48729;
+}
+
+.logo {
+    max-width: 128px;
+}
+.navbar a:hover {
+    color:#F8E9C1;
+}
+
+.navbar a:active {
+    color:#F8E9C1
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.2rem;
+}
+
+@media (max-width: 1024px)  {
+    .logo {
+        max-width: 80px;
+    }
+
+    .hamburger {
+        display: block;
+        text-align: end;
+    }
+
+    .navbar-outline{
+        margin: 2rem 3rem ;
+    }
+    
+    .navbar {
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: end;
+    }
+
+    .navbar-outline.active {
+        border-radius: 40px;
+        height: auto;
+    }
+
+    .navbar.active {
+        height: auto; 
+        border-radius: 40px;
+    }
+
+    .nav-links.active  {
+        display: block;
+    }
+
+    
+}
+
+@media (max-width: 430px) {
+    .logo {
+        max-width: 60px;
+    }
+
+    .hamburger-img {
+        width: 28px;
+    }
+
+    .navbar-outline {
+        margin: 1rem;
+    }
+
+    .navbar {
+        padding: 16px 24px;
+    }
+    
 }
 
 /* footer */

@@ -1,48 +1,10 @@
 /*head*/
-.hamburger {
-    display: none;
-}
-
 nav {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
     width: 100%;
     max-width: 1680px;
-}
-
-.navbar-outline {
-    background-color: #2D320E;
-    padding: 10px;
-    border-radius: 80px;
-    margin: 2rem 5rem ;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: #C48729 solid 1px;
-    border-radius: 80px;
-    padding: 24px 48px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.logo {
-    max-width: 128px;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar ul li {
-    margin-left: 1.2rem;
-}
-
-.navbar a {
-    color:#C48729;
 }
 
 .head-img {
@@ -155,6 +117,7 @@ select, input[type="text"],input[type="tel"],input[type="email"],input[type="dat
     background-color: #F8E9C1;
     padding: 0 1rem;
     box-sizing: border-box;
+    outline-color: #C48729;
     
 }
 
@@ -398,18 +361,6 @@ input[type="checkbox"]:checked::after {
         max-width: 992px;
         padding: 4rem;
     }
-    .navbar ul{
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
-    .navbar-outline{
-        margin: 2rem 3rem ;
-    }
-    .logo {
-        max-width: 80px; 
-    }
 
     .moon1{
         top: 0px;
@@ -531,17 +482,6 @@ input[type="checkbox"]:checked::after {
 
     p {
         font-size: 0.9rem;
-    }
-    .logo {
-        max-width: 60px;
-    }
-
-    .navbar-outline {
-        margin: 1rem;
-    }
-
-    .navbar {
-        padding: 16px 24px;
     }
     
     .head-img {
